@@ -13,4 +13,4 @@ WORKDIR /app
 COPY --from=BUILD /app/node_modules /app/node_modules
 COPY --from=BUILD /app/dist /app/dist
 
-CMD ["node", "dist/hello-world.js"]
+CMD [ "npm", "start" ]
